@@ -1,0 +1,247 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C)
+# This file is distributed under the same license as the Stacklands Modding
+# Wiki package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Stacklands Modding Wiki \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-08-12 15:19+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.12.1\n"
+
+#: ../../source/guides/golden_berry.rst:4 4673f560802a4c84b19b48b75b989821
+msgid "Guide 1: Golden Berry"
+msgstr ""
+
+#: ../../source/guides/golden_berry.rst:6 2c7f6e9d0bcc4606a5802a0435a583fc
+msgid ""
+"This guide covers the basics of making a new card with a JSON file and "
+"localization. This guide assumes that you've already read `The Tutorial "
+"<tutorial.html>`_."
+msgstr ""
+
+#: ../../source/guides/golden_berry.rst:10 c74b2557277846f6b2e0709fba9cc9ad
+msgid "Step 0. Downloading the files"
+msgstr ""
+
+#: ../../source/guides/golden_berry.rst:12 954d43bd310c489682daf2276c196b8e
+msgid ""
+"`localization.tsv <https://docs.google.com/spreadsheets/d/e/2PACX-"
+"1vRz14Suj2hTlJyyaTcCfImANxQ9kA8xOk4JuUOWDu0oIvDO0jJxvkQiEZmDeCFhE5_fmokzkW60Df5W/pub?gid=0&single=true&output=tsv>`_"
+" - The full localization file for ALL three guides (make sure you "
+"download this file as ``localization.tsv``!)"
+msgstr ""
+
+#: ../../source/guides/golden_berry.rst:14 7bb9d4b517984079a2559b942515a331
+msgid "Put the localization document in your mods folder (next to ``Mod.cs``)."
+msgstr ""
+
+#: ../../source/guides/golden_berry.rst:17 5bfadf97c1f249cbb6c3fc83a64d9f06
+msgid "Step 1. Creating the JSON file"
+msgstr ""
+
+#: ../../source/guides/golden_berry.rst:19 194a1078cfd94867b76a2a8afc13a413
+msgid ""
+"All custom cards (and ideas and packs) are created with JSON files. Let's"
+" take a look at the bare minimum need to create our first card! Create a "
+"``golden_berry.json`` file in the ``Cards/`` folder, and add the "
+"following code:"
+msgstr ""
+
+#: ../../source/guides/golden_berry.rst:31 35f2d4b832464f9a8b6cb274694ece73
+msgid ""
+"``id`` is the cards ID. This must be a unique string, so it's highly "
+"recommended to prefix it with your mods ID! ``nameTerm`` and "
+"``descriptionTerm`` are terms (see the `Localization "
+"<localization.html>`_ section for more info) for the cards name and "
+"description respectively. You should use terms whenever possible, but you"
+" can choose to use ``nameOverride`` or ``descriptionOverride`` for "
+"quickly trying things out."
+msgstr ""
+
+#: ../../source/guides/golden_berry.rst:37 1cb44051f0bb4f42846b2c3b39b1d72d
+msgid "Step 2. Testing the mod"
+msgstr ""
+
+#: ../../source/guides/golden_berry.rst:39 db1325a683b340a09cfcb56f44a48f51
+msgid ""
+"Let's run a quick test to make sure everything is working! Simply run the"
+" ``build.py`` script (ideally from a terminal), and if everything went "
+"right, you should see a similar output:"
+msgstr ""
+
+#: ../../source/guides/golden_berry.rst:48 867c18b16d554c28b2b37ec727a72fa7
+msgid ""
+"If you set up everything correctly, you should now see your mod in game! "
+"You can verify it's loaded by checking the Mods menu:"
+msgstr ""
+
+#: ../../source/guides/golden_berry.rst:52 3613cac51fe6433da32904dafe687330
+msgid ""
+"If you can see the mod, that likely means your card is loaded too. While "
+"in a run, you can open the debug menu by holding the K and O keys and "
+"pressing F1. Head to the \"Cards\" tab and search for the Golden Berry "
+"card, and click the text to spawn it!"
+msgstr ""
+
+#: ../../source/guides/golden_berry.rst:58 b9bb9da46f924b75ac45af67401319d3
+msgid ""
+"If your card doesn't show up in the debug menu, there could be a few "
+"things going wrong:"
+msgstr ""
+
+#: ../../source/guides/golden_berry.rst:60 483b247b83354b309ba143d6f34ced72
+msgid ""
+"If the mod is crossed out in the Mods menu, that means it's disabled. "
+"Enable it by clicking the \"Disable/Enable Mods\" button at the bottom of"
+" the Mods screen."
+msgstr ""
+
+#: ../../source/guides/golden_berry.rst:61 8c08db7304bb4eed847bf896d80155dd
+msgid ""
+"If the card name shows up as ``---MISSING---`` in the debug menu, the "
+"localization.tsv file didn't get copied correctly."
+msgstr ""
+
+#: ../../source/guides/golden_berry.rst:64 81690fafc0854fc1b2a057634c4156e4
+msgid "Step 3. Making the card useful"
+msgstr ""
+
+#: ../../source/guides/golden_berry.rst:66 47745782c210495b8985684a55728217
+msgid "But first, let's make it look a bit nicer:"
+msgstr ""
+
+#: ../../source/guides/golden_berry.rst:79 81a393cadc654153b00b839cf4445b44
+msgid ""
+"``icon`` is the cards icon. This may be a PNG file in the Images folder "
+"of your mod (such as \"Example.png\"), or the ID of a card. If you "
+"provide a card ID, the icon will be \"borrowed\" from that card. "
+"``value`` is the value of your card, you may set this to -1 if you want "
+"the card to be unsellable. Don't forget to build your mod after making "
+"changes to the JSON file!"
+msgstr ""
+
+#: ../../source/guides/golden_berry.rst:83 3d83dbc8db9c4739b206b0d39ef4c943
+msgid "Our golden berry now looks like a berry, and can be sold for 10 gold."
+msgstr ""
+
+#: ../../source/guides/golden_berry.rst:87 fce0749da3794a10b5ca3223f666ce8c
+msgid ""
+"Now, we will turn it into a food that our villagers can consume. We can "
+"add functionality to our card with the ``script`` property, where the "
+"value may be the name of any class that extends ``CardData``. In our "
+"case, this will be the ``Food`` class. We will also need to set the "
+"``type`` of our card to ``Food``."
+msgstr ""
+
+#: ../../source/guides/golden_berry.rst:106 1197edd810a8470888560524a93175a5
+msgid ""
+"Our card now looks like any other food card (and can be stacked on them)!"
+" Villagers can also consume it, however it's only worth 1 food point. For"
+" further functionality, we will need to use :raw-html:`<u>Underscore "
+"Properties</u>`."
+msgstr ""
+
+#: ../../source/guides/golden_berry.rst:109 e688870d445a4d13b41c6f4947ddbac7
+msgid ""
+"Underscore Properties are any key which starts with an underscore (_). "
+"The available properties depend on the selected script. All public fields"
+" in the classes are available as underscore properties. If you "
+"`decompiled the game <decompiling.html>`_, you can easily take a look at "
+"them. Let's take a look at the code of the ``Food`` class! We can find "
+"the ``Food`` class in ``GameScripts.dll``, alongside all the base game "
+"code."
+msgstr ""
+
+#: ../../source/guides/golden_berry.rst:116 4cf89f2e71fa43a88d7bab5026a24caa
+msgid ""
+"We can see a ``FoodValue`` field, and if we do some further digging into "
+"the code, we can figure out that this holds the food points of a food "
+"card. If we want to set this value in a JSON file, we can simply prefix "
+"the field name with an underscore, like so: ``\"_FoodValue\": 10``. In "
+"the screenshot we can also see a ``CanSpoil`` field, so let's set that to"
+" false."
+msgstr ""
+
+#: ../../source/guides/golden_berry.rst:135 2f4f88b382d44bd8887d822346ea96cb
+msgid ""
+"If we spawn a new Golden Berry card, we can see it has 10 food points and"
+" will no longer spoil on the island."
+msgstr ""
+
+#: ../../source/guides/golden_berry.rst:138 04789151d3224ed0b42134ad354211dc
+msgid "Step 4. Making the card pretty"
+msgstr ""
+
+#: ../../source/guides/golden_berry.rst:140 b5381d1953194deea81f627ad7e77483
+msgid ""
+"We can also specify a custom color palette in the JSON to change how the "
+"card looks. These are done with the ``_HasUniquePalette`` and "
+"``_MyPalette`` underscore properties."
+msgstr ""
+
+#: ../../source/guides/golden_berry.rst:164 55664171a67642ae951adb9323562caa
+msgid ""
+"The colors in ``_MyPalette`` are hex colors. We can also add "
+"``\"_IsShiny\": true`` to make the card shiny like a coin. Our final card"
+" will look like so:"
+msgstr ""
+
+#: ../../source/guides/golden_berry.rst:170 137b3d1c257d42c9915ac393db2c8574
+msgid "Step 5. Creating the idea"
+msgstr ""
+
+#: ../../source/guides/golden_berry.rst:172 995b94fe53a94f00b1c74270df0444c8
+msgid ""
+"If we want players to know how to make a Golden Berry, we need to tell "
+"them with an idea card. Idea cards are also created as JSON files in the "
+"``Blueprints/`` folder. Create a file called ``golden_berry_idea.json`` "
+"in the folder, and add the following code:"
+msgstr ""
+
+#: ../../source/guides/golden_berry.rst:184 2568ecbd7a5a43aba1e6648ac15b0216
+msgid ""
+"Don't build your mod just yet, as this will cause errors! The blueprint "
+"needs to specify one or more :raw-html:`<u>subprints</u>`. Subprints are "
+"what actually hold the \"recipe\" for a card. Many blueprints in the base"
+" game (such as Blueprint_Growth) hold dozens of subprints."
+msgstr ""
+
+#: ../../source/guides/golden_berry.rst:205 94d0775b9e244c6692601287aa337487
+msgid ""
+"A subprint object needs to specify 4 things (at least): the required "
+"cards (seperated by a comma), a result card, the time it will take (in "
+"seconds), and a text for the status. We can now spawn the idea card from "
+"the debug menu, and it will also show up in the Ideas menu."
+msgstr ""
+
+#: ../../source/guides/golden_berry.rst:214 d2d32b00488042a2b1e03dd75e14a925
+msgid "Step 6. Adding the idea to packs"
+msgstr ""
+
+#: ../../source/guides/golden_berry.rst:216 ece48c80b5e24a92a5c9f608379f074e
+msgid ""
+"To make sure the idea card is available in card packs, we need to write a"
+" bit of code. In the ``Ready`` method of your ``Mod`` class, add the "
+"following line of code:"
+msgstr ""
+
+#: ../../source/guides/golden_berry.rst:224 5ef6b7bce7f9459b98f15b7dedb8a774
+msgid ""
+"This will add the blueprint to the CookingIdea set card bag (with a "
+"weight of 1, same as every other card in the bag), so it will appear in "
+"the Curious Cuisine pack (as long as the idea hasn't been discovered "
+"yet)."
+msgstr ""
+

@@ -1,0 +1,48 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C)
+# This file is distributed under the same license as the Stacklands Modding
+# Wiki package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Stacklands Modding Wiki \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-08-12 15:19+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.12.1\n"
+
+#: ../../source/index.rst:15
+msgid "Guides"
+msgstr ""
+
+#: ../../source/index.rst:25
+msgid "Topics"
+msgstr ""
+
+#: ../../source/index.rst:7 f6ed4954ebfc412098df041b41127c06
+msgid "Welcome to the Stacklands Modding Wiki!"
+msgstr ""
+
+#: ../../source/index.rst:9 efde8700d190452a907eae5938e42790
+msgid ""
+"This wiki contains plenty of useful guides and all the information you "
+"need to start making your own Stacklands mods! If you would like to "
+"contribute to this wiki, check out the `GitHub repository "
+"<https://github.com/stacklandsdev/modding-wiki>`_."
+msgstr ""
+
+#: ../../source/index.rst:13 f73e712ecfdb4763834a1be54b2e17ec
+msgid ""
+"If you have any questions or feedback, join us in the `Stacklands Modding"
+" Discord server <https://discord.gg/j3FjwZVyWh>`_!"
+msgstr ""
+

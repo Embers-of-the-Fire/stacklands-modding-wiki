@@ -17,7 +17,11 @@ extensions = []
 templates_path = ['_templates']
 exclude_patterns = []
 
-
+# multi-language docs
+language = 'en'
+locale_dirs = ['./locales/']
+gettext_compact = False
+gettext_uuid = True
 
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
