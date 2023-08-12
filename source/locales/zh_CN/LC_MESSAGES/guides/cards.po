@@ -4,43 +4,45 @@
 # Wiki package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
 #
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Stacklands Modding Wiki \n"
+"Project-Id-Version: Stacklands Modding Wiki\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-08-12 15:19+0800\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language: zh_CN\n"
+"PO-Revision-Date: 2023-08-12 16:17+0800\n"
+"Last-Translator: \n"
 "Language-Team: zh_CN <LL@li.org>\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
+"Language: zh_CN\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 "Generated-By: Babel 2.12.1\n"
+"X-Generator: Poedit 3.3.2\n"
 
 #: ../../source/guides/cards.rst:2 f0f7a57429c84542b55478bf3dffd127
 msgid "Card IDs"
-msgstr ""
+msgstr "卡牌ID"
 
 #: ../../source/guides/cards.rst:4 47ccdb60332b439780b700fc85c9f1f7
 msgid ""
 "This page documents the list of card IDs. These are available as static "
 "const values in the ``Cards`` class as well."
 msgstr ""
+"本章记录了游戏中所有卡牌的ID。这些值也可以在 ``Cards`` 类中作为静态常量"
+"使用。"
 
 #: ../../source/guides/cards.rst:11 aa18fa3674a4483f84125de0cca3972a
 msgid "Name"
-msgstr ""
+msgstr "名称"
 
 #: ../../source/guides/cards.rst:12 9a7fb402b25746519d6af78fe88ca1b4
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 #: ../../source/guides/cards.rst:13 c4a3fc277ffa4770a49a7cc6d2dd521e
 msgid "DLC"
-msgstr ""
+msgstr "DLC"
 
 #: ../../source/guides/cards.rst:15 ecae6a5054834779b0b81e5bb293f29a
 msgid "Altar"
@@ -4574,4 +4576,3 @@ msgstr ""
 #: ../../source/guides/cards.rst:2036 0844f97633f94e54937788fcc26e6ad2
 msgid "``teenage_villager``"
 msgstr ""
-
