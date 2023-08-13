@@ -62,11 +62,11 @@ msgstr ""
 
 #: ../../source/guides/awake-ready.rst:20 64491071486a4b73bfe3a299b9b1e516
 msgid ":raw-html:`<hr>`"
-msgstr ""
+msgstr ":raw-html:`<hr>`"
 
 #: ../../source/guides/awake-ready.rst:22 689fcc81bdda4da1b722faf8bee37ae6
 msgid "``Awake()``"
-msgstr ""
+msgstr "``Awake()``"
 
 #: ../../source/guides/awake-ready.rst:23 432d48c19afd4037acbb847f5f07b677
 msgid "Game data gets loaded"
@@ -74,4 +74,4 @@ msgstr "游戏数据加载完成"
 
 #: ../../source/guides/awake-ready.rst:24 3e0cbddc998f4b8a8ee4b3e596d0264b
 msgid "``Ready()``"
-msgstr ""
+msgstr "``Ready()``"
